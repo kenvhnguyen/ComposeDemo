@@ -23,7 +23,7 @@ fun App() {
         var showContent by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
+                Text(if (showContent) "Hide treasure" else "Show treasure")
             }
             AnimatedVisibility(showContent) {
                 val greeting = remember { Greeting().greet() }

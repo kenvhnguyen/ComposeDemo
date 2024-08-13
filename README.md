@@ -19,3 +19,10 @@ We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public S
 If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+
+Own note:
+All platforms refers to App()
+
+mutableStateOf() function indicate a state object.
+The state object is wrapped in a call to the remember() function.
+The framework caches this state object, allowing all composables to observe it, triggering redrawing of the widgets they produce (aka recomposition)
