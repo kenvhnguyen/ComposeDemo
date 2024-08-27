@@ -14,7 +14,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import composedemo.composeapp.generated.resources.Res
-import composedemo.composeapp.generated.resources.compose_multiplatform
+import composedemo.composeapp.generated.resources.cupcake
 import org.jetbrains.compose.resources.painterResource
 
 @Composable
@@ -27,7 +27,7 @@ fun TreasureApp() {
         AnimatedVisibility(showContent) {
             val greeting = remember { Greeting().greet() }
             Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                Image(painterResource(Res.drawable.compose_multiplatform), null)
+                Image(painterResource(Res.drawable.cupcake), null)
                 Text("Compose: $greeting")
             }
         }

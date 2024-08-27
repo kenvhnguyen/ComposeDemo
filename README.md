@@ -26,3 +26,5 @@ All platforms refers to App()
 mutableStateOf() function indicate a state object.
 The state object is wrapped in a call to the remember() function.
 The framework caches this state object, allowing all composables to observe it, triggering redrawing of the widgets they produce (aka recomposition)
+
+[Navigation and routing](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-navigation-routing.html)
